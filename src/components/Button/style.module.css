@@ -1,0 +1,28 @@
+.Button {
+  padding: 13px 0;
+  @apply px-3 rounded font-bold border-white border text-sm;
+  line-height: 12px;
+}
+
+.Button, .Button.Outlined:hover {
+  @apply bg-white text-black;
+}
+
+.Button:hover, .Button.Outlined {
+  @apply text-white bg-black;
+}
+
+.Button.Outlined,
+.Button.Contained {
+  /* font-family: 'Open Sans'; */
+  border-radius: 20px;
+  @apply box-border text-xs font-semibold;
+}
+
+.Button.Outlined {
+  @apply py-2 px-2.5;
+}
+
+.Button.Contained {
+  @apply p-1.5;
+}

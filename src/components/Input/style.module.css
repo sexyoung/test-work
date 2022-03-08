@@ -1,0 +1,14 @@
+.Input {
+  outline: none;
+  padding: 17px 18px;
+  border: 3px solid rgba(255, 255, 255, 0.5);
+  @apply rounded-md bg-transparent text-sm text-white w-96;
+}
+
+.Input::placeholder {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.Input:focus {
+  border: 3px solid #FF9B33;
+}

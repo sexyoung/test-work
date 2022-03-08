@@ -1,0 +1,62 @@
+.HomePage .wrapper {
+  @apply lg:flex;
+}
+
+.HomePage .form {
+  @apply h-full;
+  @apply w-full;
+  @apply max-w-xs;
+  @apply mx-auto;
+  @apply pt-0;
+  @apply md:max-w-2xl;
+  @apply lg:pt-20;
+  @apply lg:max-w-3xl;
+  @apply relative;
+  @apply lg:h-screen;
+}
+
+.HomePage .form .title {
+  line-height: 36px;
+  @apply mb-5;
+  @apply text-2xl;
+
+}
+
+.HomePage hr {
+  background-color: rgba(255, 255, 255, .1);
+  @apply h-0;
+  @apply my-3.5;
+  @apply border-none;
+
+  @apply lg:h-px;
+  @apply lg:block;
+  @apply lg:my-7;
+  @apply lg:block;
+}
+
+.HomePage .hint {
+  @apply mb-4;
+  @apply lg:mb-5;
+  @apply text-2xl;
+  line-height: 36px;
+}
+
+.HomePage .pageSize {
+  @apply text-5xl;
+  @apply font-bold;
+  @apply mr-1;
+}
+
+.HomePage .form button {
+  max-width: 343px;
+  @apply fixed;
+  @apply left-2/4;
+  bottom: 90px;
+  transform: translateX(-50%);
+  width: calc(100% - 60px);
+
+  @apply lg:absolute;
+  @apply lg:left-0;
+  @apply lg:bottom-20;
+  @apply lg:translate-x-0;
+}

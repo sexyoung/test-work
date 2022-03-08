@@ -1,0 +1,55 @@
+.Slider {
+  /* font-family: Ubuntu; */
+  @apply text-white pt-10;
+}
+
+.Slider input {
+  display: none;
+}
+
+.Slider ul {
+  @apply flex;
+  @apply flex-wrap;
+  @apply items-center;
+  margin-top: 18px;
+  justify-content: space-between;
+}
+
+.Slider ul li {
+  @apply text-white opacity-50 text-base;
+}
+
+.Slider ul li.active {
+  @apply opacity-100;
+}
+
+.Slider .track {
+  height: 8px;
+  border-radius: 8px;
+  background-color: rgba(255,255,255,.3);
+  margin-left: 5px;
+  @apply relative;
+}
+
+.Slider .bar {
+  border-radius: 8px;
+  background: #FFD25F;
+  background: linear-gradient(-90deg, #FFD25F 0%, #FF5C01 100%);
+  margin-bottom: 14px;
+  width: 0;
+  @apply h-full block;
+}
+
+.Slider .track .thumb {
+  left: 0%;
+  top: 50%;
+  width: 26px;
+  height: 26px;
+  border: 6px solid #FFD05D;
+  transform: translate(-50%, -50%);
+  @apply rounded-full bg-black absolute;
+}
+
+.Slider .track .release {
+  transition: left 0.2s, width 0.2s;
+}

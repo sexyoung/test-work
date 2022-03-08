@@ -1,0 +1,78 @@
+.NavBar {
+  @apply top-0;
+  @apply sticky;
+  @apply lg:flex;
+  @apply lg:fixed;
+  @apply lg:flex-col;
+  @apply lg:h-screen;
+  @apply lg:bg-dark;
+}
+
+.NavBar + * {
+  @apply lg:ml-20;
+}
+
+.NavBar:not(.\/) .logoWrapper .logo {
+  @apply hidden;
+  @apply lg:block;
+}
+
+.NavBar:not(.\/) .logoWrapper .back {
+  @apply inline;
+  @apply lg:hidden;
+  @apply text-2xl;
+}
+
+.NavBar .logoWrapper {
+  padding: 28px 27px 21px;
+  @apply relative;
+  @apply bg-deep;
+  @apply lg:px-0;
+  @apply lg:pt-9;
+  @apply lg:pb-0;
+  @apply lg:mb-12;
+  @apply lg:text-center;
+  @apply lg:bg-transparent;
+}
+
+.NavBar .logoWrapper .logo {
+  font-size: 13px;
+  @apply font-bold;
+  @apply inline-block;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(90deg, #FF5C01, #FFD25F);
+}
+
+.NavBar .logoWrapper .back {
+  @apply hidden;
+}
+
+.NavBar .Menu {
+  @apply fixed;
+  @apply bottom-0;
+  @apply inset-x-0;
+  @apply bg-dark;
+  @apply flex;
+  @apply items-center;
+  @apply justify-center;
+  @apply h-16;
+
+  @apply lg:w-20;
+  @apply lg:block;
+  @apply lg:flex-1;
+  @apply lg:relative;
+  @apply lg:text-center;
+  @apply lg:bg-transparent;
+}
+
+.NavBar .Menu li {
+  @apply inline;
+  @apply mx-8;
+  @apply lg:list-item;
+}
+
+.NavBar:not(.\/) .Menu {
+  display: none;
+  @apply lg:block;
+}
